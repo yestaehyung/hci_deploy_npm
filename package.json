@@ -1,0 +1,26 @@
+{
+  "name": "simple-language-switcher",
+  "version": "1.0.0",
+  "description": "A simple bilingual web app for deployment learning (English/Korean)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "deployment",
+    "bilingual",
+    "railway",
+    "vercel"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

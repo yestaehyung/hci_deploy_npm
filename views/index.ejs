@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content.title %></title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><%= content.title %></h1>
+            <div class="lang-indicator">
+                <%= lang === 'en' ? '🇺🇸 English' : '🇰🇷 한국어' %>
+            </div>
+        </header>
+
+        <main>
+            <div class="welcome-section">
+                <h2><%= content.welcome %></h2>
+                <p class="description"><%= content.description %></p>
+            </div>
+
+            <div class="features-section">
+                <h3><%= content.features %></h3>
+                <ul>
+                    <li><%= content.feature1 %></li>
+                    <li><%= content.feature2 %></li>
+                    <li><%= content.feature3 %></li>
+                </ul>
+            </div>
+
+            <div class="action-section">
+                <p><%= content.instruction %></p>
+                <a href="/<%= lang === 'en' ? 'ko' : 'en' %>" class="switch-btn">
+                    <%= content.switchBtn %>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p><%= content.footer %></p>
+        </footer>
+    </div>
+</body>
+</html>
